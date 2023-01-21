@@ -1,0 +1,32 @@
+@{
+    ViewData["Title"] = "Products Page";
+}
+@model List<Product>
+<div class="text-center">
+    <h3 >Products</h3>
+<table class="table table-hover">
+  <thead>
+    <tr>     
+      <th scope="col">Id</th>
+      <th scope="col">Title</th>
+      <th scope="col">Desc</th>
+      <th scope="col">UnitPrice</th>
+      <th scope="col">Qty</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+        @foreach(var item in Model)
+        {
+            <tr>
+            <td>@item.Id</td>
+            <td>@item.Title</td>
+            <td>@item.Description</td>
+            <td>@item.Unitprice</td>
+            <td>@item.Stockavailable</td>
+            </tr>
+        }   
+   
+  </tbody>
+</table>
+</div>
