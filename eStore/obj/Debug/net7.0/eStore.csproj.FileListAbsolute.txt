@@ -29,3 +29,12 @@ D:\0106_0036\DotNet\DotNet_Core\OnlineSolution\eStore\obj\Debug\net7.0\refint\eS
 D:\0106_0036\DotNet\DotNet_Core\OnlineSolution\eStore\obj\Debug\net7.0\eStore.pdb
 D:\0106_0036\DotNet\DotNet_Core\OnlineSolution\eStore\obj\Debug\net7.0\eStore.genruntimeconfig.cache
 D:\0106_0036\DotNet\DotNet_Core\OnlineSolution\eStore\obj\Debug\net7.0\ref\eStore.dll
+D:\0106_0036\DotNet\DotNet_Core\OnlineSolution\eStore\bin\Debug\net7.0\BLL.dll
+D:\0106_0036\DotNet\DotNet_Core\OnlineSolution\eStore\bin\Debug\net7.0\BOL.dll
+D:\0106_0036\DotNet\DotNet_Core\OnlineSolution\eStore\bin\Debug\net7.0\DAL.dll
+D:\0106_0036\DotNet\DotNet_Core\OnlineSolution\eStore\bin\Debug\net7.0\SAL.dll
+D:\0106_0036\DotNet\DotNet_Core\OnlineSolution\eStore\bin\Debug\net7.0\BOL.pdb
+D:\0106_0036\DotNet\DotNet_Core\OnlineSolution\eStore\bin\Debug\net7.0\SAL.pdb
+D:\0106_0036\DotNet\DotNet_Core\OnlineSolution\eStore\bin\Debug\net7.0\BLL.pdb
+D:\0106_0036\DotNet\DotNet_Core\OnlineSolution\eStore\bin\Debug\net7.0\DAL.pdb
+D:\0106_0036\DotNet\DotNet_Core\OnlineSolution\eStore\obj\Debug\net7.0\eStore.csproj.CopyComplete

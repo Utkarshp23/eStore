@@ -1,0 +1,36 @@
+@{
+    ViewData["Title"] = "Insert Product Page";
+}
+
+<div class="form-container ">
+  <h4>Product Form</h4>
+  <form method="post" action="/products/insert">
+  <div class="mb-3 mt-3">
+   
+    <input type="number" class="form-control" id="pid" placeholder="Enter product Id" name="pid">
+  </div>
+  <div class="mb-3 mt-3">
+    
+    <input type="text" class="form-control" id="title" placeholder="Enter Title" name="title">
+  </div>
+  <div class="mb-3 mt-3">
+   
+    <input type="text" class="form-control" id="desc" placeholder="Enter Description" name="desc">
+  </div>
+  <div class="mb-3 mt-3">
+   
+    <input type="number" class="form-control" id="uprice" placeholder="Enter Unit price" name="uprice">
+  </div>
+
+  <div class="mb-3 mt-3">
+    
+    <input type="number" class="form-control" id="saval" placeholder="Enter stock available" name="saval">
+  </div>
+  <div class="mb-3">
+    
+    <input type="text" class="form-control" id="cat" placeholder="Enter category" name="cat">
+  </div>
+   
+  <button type="submit" class="btn btn-primary">Insert</button>
+</form>
+</div>

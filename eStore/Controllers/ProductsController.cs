@@ -1,6 +1,8 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using eStore.Models;
+using SAL;
+using BOL;
 
 namespace eStore.Controllers;
 
@@ -15,11 +17,33 @@ public class ProductsController : Controller
 
     public IActionResult Index()
     {
-        List<Product> plist= new List<Product>();
-        plist.Add(new Product{Id=1,Title="Telvision",Description="internet tv",Unitprice=100000.0,Stockavailable=10});
-        plist.Add(new Product{Id=2,Title="Mobile",Description="internet tv",Unitprice=100000.0,Stockavailable=10});
-        plist.Add(new Product{Id=3,Title="laptop",Description="internet tv",Unitprice=100000.0,Stockavailable=10});
-        return View(plist);
+        ProductHubService svc=new ProductHubService();
+        List<Product> plist= svc.GetAllProducts();
+        this.ViewData["products"]=plist;
+        return View();
+    }
+
+    public IActionResult Insertform()
+    {
+        return View();
+    }
+
+    public IActionResult Details(int id)
+    {
+         ProductHubService svc=new ProductHubService();
+         Product p= svc.GetProductById(id);
+         
+         this.ViewData["prod"]=p;
+         return View();
+    }
+
+    [HttpPost]
+    public IActionResult Insert(int pid,string title,string desc,int uprice,int saval,string cat)
+    {
+        Product p=new Product{ProductId = pid, Title = title, Description = desc, UnitPrice = uprice , StockAvailable = saval, Category = cat};
+        ProductHubService svc= new ProductHubService();
+        bool status= svc.AddProduct(p);
+        return this.RedirectToAction("Index","Products");
     }
 
     
