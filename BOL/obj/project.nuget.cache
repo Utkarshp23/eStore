@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uZER44ounEvyZ0jKBJjm5XIb9/fepElW0gg8/z+k9Ac74F6mR4g7qkvBz3K2cEpoOJARPl716kK5kDqM82sZbw==",
+  "dgSpecHash": "o87tsWapUt5OjHtDOd5MWjBZUwJLLDccr0qfT3zXFwCSdFMakS5tKy2SmfID7PAQsaa7s+FJgShqyh06atNQkA==",
   "success": true,
-  "projectFilePath": "D:\\0106_0036\\DotNet\\DotNet_Core\\OnlineSolution\\BOL\\BOL.csproj",
+  "projectFilePath": "/home/utkarsh/CDAC/DotNet/eStore/BOL/BOL.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

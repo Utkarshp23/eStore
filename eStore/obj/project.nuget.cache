@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "M/f4eM4NetJ+XVGSNPo+6NFaG4IxeJZj0kZR4NDOW1fPYqsGplDvx8lRrdzNn3ln7dubgolpUpnEgbTeOKbJOQ==",
+  "dgSpecHash": "vSg1WVZtt2FCyErWxh8Z+j5DKKQfanER9HLDAYSHE10jj9OIa++tfriqif+4/5gHsjEYT8sOutPSD/Zqm0aXiQ==",
   "success": true,
-  "projectFilePath": "D:\\0106_0036\\DotNet\\DotNet_Core\\OnlineSolution\\eStore\\eStore.csproj",
+  "projectFilePath": "/home/utkarsh/CDAC/DotNet/eStore/eStore/eStore.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
