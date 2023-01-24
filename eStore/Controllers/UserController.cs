@@ -1,54 +1,67 @@
 using System.Diagnostics;
-using Microsoft.AspNetCore.Mvc;
+using BOL;
 using eStore.Models;
+using Microsoft.AspNetCore.Mvc;
+using SAL;
 
 namespace eStore.Controllers;
 
 public class UserController : Controller
 {
-    private readonly ILogger<UserController> _logger;
+  private readonly ILogger<UserController> _logger;
 
-    public UserController(ILogger<UserController> logger)
+  public UserController(ILogger<UserController> logger)
+  {
+    _logger = logger;
+  }
+
+  public IActionResult Index()
+  {
+    return View();
+  }
+
+  public IActionResult Login()
+  {
+    return View();
+  }
+
+  [HttpPost]
+  public IActionResult Login(string email, string password)
+  {
+    CustomerService cvs = new CustomerService();
+    Customer c = cvs.GetCustomerByEmailAndPassword(email, password);
+    System.Console.WriteLine(c.Email + " -- " + c.Password);
+    if (c.Email == email && c.Password == password)
     {
-        _logger = logger;
+      Response.Redirect("/dashboard/index");
     }
-
-    public IActionResult Index()
+    if (c == null)
     {
-        return View();
+      return this.RedirectToAction("Error", "User");
     }
-
-    public IActionResult Login()
-    {
-      return View();
-    }
-
-    [HttpPost]
-    public IActionResult Login(string email, string password)
-    {
-      if(email=="utkarshpawar2332@gmail.com" && password=="root1234")
-      {
-        Response.Redirect("/dashboard/index");
-      }
-      return View();
-    }
+    return View();
+  }
 
 
-    public IActionResult Signup()
-    {
-      return View();
-    }
+  public IActionResult Signup()
+  {
+    
+    return View();
+  }
 
-    [HttpPost]
-    public IActionResult Signup(string fname,string lname,string cnum, string location, string email, string password)
-    {
-      System.Console.WriteLine($"{fname} entried...");
-      return this.RedirectToAction("Login","User");
-    }
+  [HttpPost]
+  public IActionResult Signup(string fname, string lname, string cnum, string location, string email, string password)
+  {
+    System.Console.WriteLine($"{fname} entried...");
+    Customer c= new Customer{Fname=fname,Lname=lname,Cnum=cnum,Location=location,Email=email,Password=password};
+    CustomerService cvs = new CustomerService();
+    bool status= cvs.AddCustomer(c);
+    return this.RedirectToAction("Login", "User");
+  }
 
-    [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-    public IActionResult Error()
-    {
-        return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-    }
+  [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+  public IActionResult Error()
+  {
+    return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+  }
 }
