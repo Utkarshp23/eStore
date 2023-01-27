@@ -30,22 +30,24 @@ public class UserController : Controller
   {
     CustomerService cvs = new CustomerService();
     Customer c = cvs.GetCustomerByEmailAndPassword(email, password);
-    System.Console.WriteLine(c.Email + " -- " + c.Password);
-    if (c.Email == email && c.Password == password)
-    {
-      Response.Redirect("/dashboard/index");
-    }
+    // System.Console.WriteLine(c.Email + " -- " + c.Password);
+
     if (c == null)
-    {
-      return this.RedirectToAction("Error", "User");
-    }
-    return View();
+      return RedirectToAction("Login", "User");
+    // if (c.Email == email && c.Password == password)
+    // {
+    // Session[""]
+    HttpContext.Session.SetString("email", c.Email);
+    HttpContext.Session.SetString("password", c.Password);
+    HttpContext.Session.SetString("username", c.Fname);
+    return RedirectToAction("Index", "Dashboard");
+    // }
+    // else
+
   }
-
-
+  
   public IActionResult Signup()
   {
-    
     return View();
   }
 
@@ -53,10 +55,17 @@ public class UserController : Controller
   public IActionResult Signup(string fname, string lname, string cnum, string location, string email, string password)
   {
     System.Console.WriteLine($"{fname} entried...");
-    Customer c= new Customer{Fname=fname,Lname=lname,Cnum=cnum,Location=location,Email=email,Password=password};
+    Customer c = new Customer { Fname = fname, Lname = lname, Cnum = cnum, Location = location, Email = email, Password = password };
     CustomerService cvs = new CustomerService();
-    bool status= cvs.AddCustomer(c);
+    bool status = cvs.AddCustomer(c);
     return this.RedirectToAction("Login", "User");
+  }
+
+  public IActionResult Logout()
+  {
+    HttpContext.Session.Remove("email");
+    HttpContext.Session.Remove("password");
+    return RedirectToAction("Index", "Home");
   }
 
   [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

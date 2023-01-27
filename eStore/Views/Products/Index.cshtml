@@ -13,36 +13,30 @@
       <th scope="col">Desc</th>
       <th scope="col">UnitPrice</th>
       <th scope="col">Qty</th>
-      <th scope="col">Category</th>
+      @* <th scope="col">Category</th> *@
       <th scope="col"></th>
       <th scope="col"></th>
     </tr>
   </thead>
-  <tbody>
-    
+  <tbody>  
         @{
             List<Product> products=ViewData["products"] as List<Product>;
             foreach(var item in products)
             {
-                <tr onclick>
+                <tr >
                 <td>@item.ProductId</td>
                 <td>@item.Title</td>
                 <td>@item.Description</td>
                 <td>@item.UnitPrice</td>
                 <td>@item.StockAvailable</td>
-                <td>@item.Category</td>
+                @* <td>@item.Category</td> *@
                 <td><a href="/products/details/@item.ProductId">show details</a></td>
                 <td><a href="/products/delete/@item.ProductId">remove</a></td>
                 </tr>
             }   
         }
-
-        
-        
-   
   </tbody>
 </table>
-
         <br/>
         <a href="/products/insertform">Add new Product</a>
 </div>

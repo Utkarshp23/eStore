@@ -1,9 +1,11 @@
+@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor Accessor
 @{
     ViewData["Title"] = "User Dashboard Page";
 }
 
 <div class="text-center">
-    <h5 >Welcome Logged in User....</h5>
+    <h5 >Welcome @Accessor.HttpContext.Session.GetString("username")</h5>
     <div class="row">
   <div class="col-4">
     <div class="list-group" id="list-tab" role="tablist">

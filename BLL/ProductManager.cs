@@ -22,7 +22,8 @@ public class ProductManager
 
   public List<Product> GetAllProducts()
   {
-    List<Product> products = ProductRepository.GetAllProducts();
+    // List<Product> products = ProductRepository.GetAllProducts();
+    List<Product> products = MySqlProductRepo.GetAllProducts();
     return products;
   }
 

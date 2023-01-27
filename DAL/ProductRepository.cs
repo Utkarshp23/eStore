@@ -1,8 +1,10 @@
 ﻿namespace DAL;
+using System.Data;
 using System.IO;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using BOL;
+using MySql.Data.MySqlClient;
 public static class ProductRepository
 {
 
@@ -13,6 +15,8 @@ public static class ProductRepository
   {
     // string productString = File.ReadAllText("../products.json");
     // List<Product> allProducts = JsonSerializer.Deserialize<List<Product>>(productString);
+    // MySqlConnection conn= new MySqlConnection();
+
     return allProducts;
   }
 
