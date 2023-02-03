@@ -1,0 +1,34 @@
+<script>
+var str="";
+  fetch('https://fakestoreapi.com/products')
+            .then(res=>res.json())
+            .then(data=>{
+              str="<table class='table table-hover'>";
+                  str+="<thead>"     
+                  str+="<tr> "         
+                  str+=" <th scope='col'>Id</th>"         
+                  str+="<th scope='col'>Title</th>"          
+                  str+="<th scope='col'>UnitPrice</th>"          
+                  str+="</tr>"                               
+                  str+="</thead>"      
+                  str+= "<tbody>"     
+              data.forEach((p)=>{
+                  str+="<tr >";
+                  str+="<td>"+p.id+"</td>";
+                  console.log(p.id);
+                  str+="<td>"+p.title+"</td>";
+                  str+="<td>"+p.price+"</td>";
+                  str+="</tr>";
+              })
+              str+="</tbody>";
+              str+="</table>";
+              @* alert("Hello"); *@
+              document.getElementById("show_dat").innerHTML=str;
+            })
+
+  
+</script>
+
+<div id="show_dat">
+
+</div>

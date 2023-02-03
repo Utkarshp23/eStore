@@ -53,6 +53,11 @@ public class ProductsController : Controller
     return this.RedirectToAction("Index", "Products");
   }
 
+  public IActionResult Getdata()
+  {
+    return View();
+  }
+
   [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
   public IActionResult Error()
   {

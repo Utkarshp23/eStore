@@ -1,36 +1,42 @@
 {
   "format": 1,
   "restore": {
-    "/home/utkarsh/CDAC/DotNet/eStore/SAL/SAL.csproj": {}
+    "D:\\0106_0036\\DotNet\\Dotnet\\eStore\\SAL\\SAL.csproj": {}
   },
   "projects": {
-    "/home/utkarsh/CDAC/DotNet/eStore/BLL/BLL.csproj": {
+    "D:\\0106_0036\\DotNet\\Dotnet\\eStore\\BLL\\BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/utkarsh/CDAC/DotNet/eStore/BLL/BLL.csproj",
+        "projectUniqueName": "D:\\0106_0036\\DotNet\\Dotnet\\eStore\\BLL\\BLL.csproj",
         "projectName": "BLL",
-        "projectPath": "/home/utkarsh/CDAC/DotNet/eStore/BLL/BLL.csproj",
-        "packagesPath": "/home/utkarsh/.nuget/packages/",
-        "outputPath": "/home/utkarsh/CDAC/DotNet/eStore/BLL/obj/",
+        "projectPath": "D:\\0106_0036\\DotNet\\Dotnet\\eStore\\BLL\\BLL.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "D:\\0106_0036\\DotNet\\Dotnet\\eStore\\BLL\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/utkarsh/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/home/utkarsh/CDAC/DotNet/eStore/BOL/BOL.csproj": {
-                "projectPath": "/home/utkarsh/CDAC/DotNet/eStore/BOL/BOL.csproj"
+              "D:\\0106_0036\\DotNet\\Dotnet\\eStore\\BOL\\BOL.csproj": {
+                "projectPath": "D:\\0106_0036\\DotNet\\Dotnet\\eStore\\BOL\\BOL.csproj"
               },
-              "/home/utkarsh/CDAC/DotNet/eStore/DAL/DAL.csproj": {
-                "projectPath": "/home/utkarsh/CDAC/DotNet/eStore/DAL/DAL.csproj"
+              "D:\\0106_0036\\DotNet\\Dotnet\\eStore\\DAL\\DAL.csproj": {
+                "projectPath": "D:\\0106_0036\\DotNet\\Dotnet\\eStore\\DAL\\DAL.csproj"
               }
             }
           }
@@ -60,26 +66,32 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.102/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/utkarsh/CDAC/DotNet/eStore/BOL/BOL.csproj": {
+    "D:\\0106_0036\\DotNet\\Dotnet\\eStore\\BOL\\BOL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/utkarsh/CDAC/DotNet/eStore/BOL/BOL.csproj",
+        "projectUniqueName": "D:\\0106_0036\\DotNet\\Dotnet\\eStore\\BOL\\BOL.csproj",
         "projectName": "BOL",
-        "projectPath": "/home/utkarsh/CDAC/DotNet/eStore/BOL/BOL.csproj",
-        "packagesPath": "/home/utkarsh/.nuget/packages/",
-        "outputPath": "/home/utkarsh/CDAC/DotNet/eStore/BOL/obj/",
+        "projectPath": "D:\\0106_0036\\DotNet\\Dotnet\\eStore\\BOL\\BOL.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "D:\\0106_0036\\DotNet\\Dotnet\\eStore\\BOL\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/utkarsh/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -113,34 +125,40 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.102/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/utkarsh/CDAC/DotNet/eStore/DAL/DAL.csproj": {
+    "D:\\0106_0036\\DotNet\\Dotnet\\eStore\\DAL\\DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/utkarsh/CDAC/DotNet/eStore/DAL/DAL.csproj",
+        "projectUniqueName": "D:\\0106_0036\\DotNet\\Dotnet\\eStore\\DAL\\DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "/home/utkarsh/CDAC/DotNet/eStore/DAL/DAL.csproj",
-        "packagesPath": "/home/utkarsh/.nuget/packages/",
-        "outputPath": "/home/utkarsh/CDAC/DotNet/eStore/DAL/obj/",
+        "projectPath": "D:\\0106_0036\\DotNet\\Dotnet\\eStore\\DAL\\DAL.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "D:\\0106_0036\\DotNet\\Dotnet\\eStore\\DAL\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/utkarsh/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/home/utkarsh/CDAC/DotNet/eStore/BOL/BOL.csproj": {
-                "projectPath": "/home/utkarsh/CDAC/DotNet/eStore/BOL/BOL.csproj"
+              "D:\\0106_0036\\DotNet\\Dotnet\\eStore\\BOL\\BOL.csproj": {
+                "projectPath": "D:\\0106_0036\\DotNet\\Dotnet\\eStore\\BOL\\BOL.csproj"
               }
             }
           }
@@ -176,37 +194,43 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.102/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/utkarsh/CDAC/DotNet/eStore/SAL/SAL.csproj": {
+    "D:\\0106_0036\\DotNet\\Dotnet\\eStore\\SAL\\SAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/utkarsh/CDAC/DotNet/eStore/SAL/SAL.csproj",
+        "projectUniqueName": "D:\\0106_0036\\DotNet\\Dotnet\\eStore\\SAL\\SAL.csproj",
         "projectName": "SAL",
-        "projectPath": "/home/utkarsh/CDAC/DotNet/eStore/SAL/SAL.csproj",
-        "packagesPath": "/home/utkarsh/.nuget/packages/",
-        "outputPath": "/home/utkarsh/CDAC/DotNet/eStore/SAL/obj/",
+        "projectPath": "D:\\0106_0036\\DotNet\\Dotnet\\eStore\\SAL\\SAL.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "D:\\0106_0036\\DotNet\\Dotnet\\eStore\\SAL\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/utkarsh/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/home/utkarsh/CDAC/DotNet/eStore/BLL/BLL.csproj": {
-                "projectPath": "/home/utkarsh/CDAC/DotNet/eStore/BLL/BLL.csproj"
+              "D:\\0106_0036\\DotNet\\Dotnet\\eStore\\BLL\\BLL.csproj": {
+                "projectPath": "D:\\0106_0036\\DotNet\\Dotnet\\eStore\\BLL\\BLL.csproj"
               },
-              "/home/utkarsh/CDAC/DotNet/eStore/BOL/BOL.csproj": {
-                "projectPath": "/home/utkarsh/CDAC/DotNet/eStore/BOL/BOL.csproj"
+              "D:\\0106_0036\\DotNet\\Dotnet\\eStore\\BOL\\BOL.csproj": {
+                "projectPath": "D:\\0106_0036\\DotNet\\Dotnet\\eStore\\BOL\\BOL.csproj"
               }
             }
           }
@@ -236,7 +260,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.102/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

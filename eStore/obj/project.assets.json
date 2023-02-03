@@ -1605,35 +1605,42 @@
     ]
   },
   "packageFolders": {
-    "/home/utkarsh/.nuget/packages/": {}
+    "C:\\Users\\admin\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/utkarsh/CDAC/DotNet/eStore/eStore/eStore.csproj",
+      "projectUniqueName": "D:\\0106_0036\\DotNet\\Dotnet\\eStore\\eStore\\eStore.csproj",
       "projectName": "eStore",
-      "projectPath": "/home/utkarsh/CDAC/DotNet/eStore/eStore/eStore.csproj",
-      "packagesPath": "/home/utkarsh/.nuget/packages/",
-      "outputPath": "/home/utkarsh/CDAC/DotNet/eStore/eStore/obj/",
+      "projectPath": "D:\\0106_0036\\DotNet\\Dotnet\\eStore\\eStore\\eStore.csproj",
+      "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+      "outputPath": "D:\\0106_0036\\DotNet\\Dotnet\\eStore\\eStore\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/home/utkarsh/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/home/utkarsh/CDAC/DotNet/eStore/BOL/BOL.csproj": {
-              "projectPath": "/home/utkarsh/CDAC/DotNet/eStore/BOL/BOL.csproj"
+            "D:\\0106_0036\\DotNet\\Dotnet\\eStore\\BOL\\BOL.csproj": {
+              "projectPath": "D:\\0106_0036\\DotNet\\Dotnet\\eStore\\BOL\\BOL.csproj"
             },
-            "/home/utkarsh/CDAC/DotNet/eStore/SAL/SAL.csproj": {
-              "projectPath": "/home/utkarsh/CDAC/DotNet/eStore/SAL/SAL.csproj"
+            "D:\\0106_0036\\DotNet\\Dotnet\\eStore\\SAL\\SAL.csproj": {
+              "projectPath": "D:\\0106_0036\\DotNet\\Dotnet\\eStore\\SAL\\SAL.csproj"
             }
           }
         }
@@ -1672,7 +1679,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.102/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }

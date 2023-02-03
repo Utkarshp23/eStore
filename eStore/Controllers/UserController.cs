@@ -54,7 +54,7 @@ public class UserController : Controller
   [HttpPost]
   public IActionResult Signup(string fname, string lname, string cnum, string location, string email, string password)
   {
-    System.Console.WriteLine($"{fname} entried...");
+    // System.Console.WriteLine($"{fname} entried...");
     Customer c = new Customer { Fname = fname, Lname = lname, Cnum = cnum, Location = location, Email = email, Password = password };
     CustomerService cvs = new CustomerService();
     bool status = cvs.AddCustomer(c);
