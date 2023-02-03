@@ -1,0 +1,3 @@
+D:\0106_0036\DotNet\Dotnet\eStore\BOL\bin\Release\net7.0\publish\BOL.dll
+D:\0106_0036\DotNet\Dotnet\eStore\BOL\bin\Release\net7.0\publish\BOL.deps.json
+D:\0106_0036\DotNet\Dotnet\eStore\BOL\bin\Release\net7.0\publish\BOL.pdb
